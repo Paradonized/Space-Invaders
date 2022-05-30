@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SpaceInvaders</title>
+        <link rel="icon" type="image/x-icon" href="./img/invader2.png">
+        <link rel="stylesheet" href="./css/spaceInvaders.css" type="text/css">
+    </head>
+    <body>
+        <div id="title-screen">
+            <h1>Space Invaders</h1>
+            <button id="startBtn">Play</button>
+            <audio src="./sound/start.mp3" id="startAudio"></audio>
+        </div>
+
+        <div id="game" hidden>
+            <p>
+                <span class="inGame">Score: </span><span class="inGame" id="scoreEl">0</span><br />
+                <span class="inGame">Time: </span><span class="inGame" id="time">00:00</span>
+            </p>
+            <canvas id="canvas"></canvas>
+            <audio src="./sound/shoot.wav" id="shootAudio"></audio>
+            <audio src="./sound/explosion.wav" id="explosionAudio"></audio>
+            <audio src="./sound/invaderkilled.wav" id="invaderkilledAudio"></audio>
+            <audio src="./sound/invader1.wav" id="invaderAudio"></audio>
+        </div>
+        
+        <div id="gameOver-screen" hidden>
+            <h1>Game Over</h1>
+            Score: <span id="endScoreEl">0</span><br /><br />
+            Time: <span id="endTime">00:00</span><br /><br />
+            <button id="restatrBtn" onClick="window.location.reload();">To title screen</button>
+            <audio src="./sound/lose.wav" id="loseAudio"></audio>
+        </div>
+        <script src="js/spaceInvaders.js"></script>
+    </body>
+</html>

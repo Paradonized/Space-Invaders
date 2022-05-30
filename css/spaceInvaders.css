@@ -1,0 +1,103 @@
+@font-face {
+    font-family: kongtext;
+    src: url(../fonts/kongtext.ttf) format("truetype");
+}
+
+body{
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    height:100%;
+    font-family: kongtext;
+}
+
+#title-screen{
+    margin:0px;
+    height:100%;
+    height:100%;
+    text-align: center;
+    background-color: black;
+    font-size: 25px;
+    padding-top: 10px;
+    background-image: url("../img/background.png");
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p{
+    position: fixed;
+    z-index: 10;
+    color: white;
+    left: 10px;
+    top: 10px;
+    margin: 0;
+}
+
+audio {
+    display: none;
+}
+
+.inGame{
+    font-family: kongtext;
+    font-size: 10px;
+}
+
+button{
+    text-align: center;
+    top: 50%;
+    font-family: kongtext;
+    background-color: transparent;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 15px;
+    color: white;
+    font-size: 50px;
+    padding: 5px 5px 5px 5px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#gameOver-screen{
+    text-align: center;
+    margin:0px;
+    height:100%;
+    height:100%;
+    background-color: black;
+    font-size: 25px;
+    padding-top: 10px;
+    background-image: url("../img/background.png");
+    image-rendering: pixelated;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+html{
+    color: #eee;
+    line-height: 1;
+    text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+    letter-spacing: 0.125em;
+    animation-duration: 0.01s;
+    animation-name: textflicker;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+h1{ 
+    font-size: 5em;
+    margin-top: 0;
+}
+  
+@keyframes textflicker {
+    from {
+      text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+    }
+    to {
+      text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+    }
+}
