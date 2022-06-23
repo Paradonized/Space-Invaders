@@ -1,5 +1,5 @@
 # Space-Invaders
-Space Invaders made with JS with canvas.
+Space Invaders made with JS and canvas.
 
 ## How to play
 * w, a, s, d - keys for movement.
